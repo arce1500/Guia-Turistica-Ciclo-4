@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/descripcion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -16,23 +17,28 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Pereira" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="407dp"
         android:layout_height="198dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Titulo"
         app:srcCompat="@drawable/ic_launcher_foreground"
-        android:contentDescription="TODO" />
+        tools:srcCompat="@drawable/pereira1" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="412dp"
         android:layout_height="166dp"
+        android:layout_marginTop="16dp"
         android:text="Descripcion"
         android:textAlignment="viewStart"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="Pereira se encuentra situada en una zona montañosa sobre el Valle del río Otún, a 1.411 m.s.n.m. en medio de la Cordillera Central de los Andes, a menos de 35 km. de la capital colombiana. Gracias a su localización cuenta con varios pisos térmicos, empezando de los 890 m.s.n.m. al pie del río Cauca, donde hay un clima cálido; siguiendo con los pisos térmicos medio y frío; y llegando hasta una zona de nieves perpetuas como el Nevado Santa Isabel y el Nevado del Ruiz ubicados a más de 5.000 y más de 5.300 m.s.n.m. respectivamente." />
 </androidx.constraintlayout.widget.ConstraintLayout>
