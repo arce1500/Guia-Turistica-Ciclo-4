@@ -7,7 +7,7 @@ import com.example.guiaturisticaciclo4.utils.Utils
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.cardview)
         val getList = Utils(this).getList()
         println(getList)
     }
