@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GuiaTuristicaCiclo4">
         <activity
+            android:name=".recyclerview"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
