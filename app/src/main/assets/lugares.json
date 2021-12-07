@@ -1,35 +1,31 @@
-{
-  "places": [
-    {
-      "name": "Bolivar desnudo",
-      "description": "es un monumento realizado por el maestro Rodrigo Arenas Betancourt y por el ingeniero Guillermo González Zuleta.\nEl monumento fue inaugurado en agosto de 1963 con motivo del centenario de la ciudad. Para su elaboración, el maestro Arenas firmó un contrato en enero de 1955 con el alcalde de Pereira Lázaro Nicholls por $300.000 pesos colombianos.\nTiene 14 toneladas de peso y fue fundido en bronce en el taller de Abraham González Holguín, en México y posteriormente transportado en barco desde el puerto de Acapulco.\nAunque la obra fue objeto de polémica en un principio, actualmente es un símbolo de la ciudad capital del departamento de Risaralda.\n",
-      "location": "Pereira",
-      "imageUrl":"https://es.m.wikipedia.org/wiki/Archivo:Bolivar_Desnudo_Pereira.JPG",
-      "puntuacion": 5
-
-    },
-    {
-      "name": "Viaducto Cesar Gaviria",
-      "description": "Es un puente atirantado que une a la ciudad de Pereira con el municipio de Dosquebradas atravesando el valle del río Otún, en del Área Metropolitana de Centro Occidente, en Risaralda, Colombia. Se considera una de las obras viales más importantes de Colombia.1\nDiariamente transitan por allí 186.000 vehículos. En las mañanas el flujo mayoritario es de Dosquebradas a Pereira y en las tardes sucede lo contrario.\n",
-      "location": "Pereira y Dos Quebradas",
-      "imageUrl":"https://www.ecured.cu/images/1/1f/Viaducto_Cesar_Gaviria_Trujillo.jpg",
-      "puntuacion": 5
-
-    },
-    {
-      "name": "Catedral de Nuestra Señora de la Pobreza ",
-      "description": "Es el principal templo de la diócesis de Pereira y fue elevado a catedral el 18 de diciembre de 1952 por bula del papa Pío XII.1",
-      "location": "Se encuentra en el costado occidental de la plaza de Bolívar, entre las calles 20 y 21 con carrera 7, en el centro de la ciudad.",
-      "imageUrl": "https://live.staticflickr.com/2309/1796092415_9df14880ab_b.jpg",
-      "puntuacion": 5
-    },
-    {
-      "name": "Parque Ukumari ",
-      "description": "Parque ecoturístico con sitios para comer y especies autóctonas y africanas de animales y plantas",
-      "location": "Pereira",
-      "imageUrl": "https://www.portafolio.co/files/article_main/uploads/2016/02/04/56b3b180e9e60.jpeg",
-      "puntuacion": 5
-    }
-  ]
-}
+[
+  {
+    "name":"Bolivar desnudo",
+    "description":"es un monumento realizado por el maestro Rodrigo Arenas Betancourt y por el ingeniero Guillermo González Zuleta.\nEl monumento fue inaugurado en agosto de 1963 con motivo del centenario de la ciudad. Para su elaboración, el maestro Arenas firmó un contrato en enero de 1955 con el alcalde de Pereira Lázaro Nicholls por $300.000 pesos colombianos.\nTiene 14 toneladas de peso y fue fundido en bronce en el taller de Abraham González Holguín, en México y posteriormente transportado en barco desde el puerto de Acapulco.\nAunque la obra fue objeto de polémica en un principio, actualmente es un símbolo de la ciudad capital del departamento de Risaralda.\n",
+    "location":"Pereira",
+    "imageUrl":"https://es.m.wikipedia.org/wiki/Archivo:Bolivar_Desnudo_Pereira.JPG",
+    "puntuacion":5
+  },
+  {
+    "name":"Viaducto Cesar Gaviria",
+    "description":"Es un puente atirantado que une a la ciudad de Pereira con el municipio de Dosquebradas atravesando el valle del río Otún, en del Área Metropolitana de Centro Occidente, en Risaralda, Colombia. Se considera una de las obras viales más importantes de Colombia.1\nDiariamente transitan por allí 186.000 vehículos. En las mañanas el flujo mayoritario es de Dosquebradas a Pereira y en las tardes sucede lo contrario.\n",
+    "location":"Pereira y Dos Quebradas",
+    "imageUrl":"https://www.ecured.cu/images/1/1f/Viaducto_Cesar_Gaviria_Trujillo.jpg",
+    "puntuacion":5
+  },
+  {
+    "name":"Catedral de Nuestra Señora de la Pobreza ",
+    "description":"Es el principal templo de la diócesis de Pereira y fue elevado a catedral el 18 de diciembre de 1952 por bula del papa Pío XII.1",
+    "location":"Se encuentra en el costado occidental de la plaza de Bolívar, entre las calles 20 y 21 con carrera 7, en el centro de la ciudad.",
+    "imageUrl":"https://live.staticflickr.com/2309/1796092415_9df14880ab_b.jpg",
+    "puntuacion":5
+  },
+  {
+    "name":"Parque Ukumari ",
+    "description":"Parque ecoturístico con sitios para comer y especies autóctonas y africanas de animales y plantas",
+    "location":"Pereira",
+    "imageUrl":"https://www.portafolio.co/files/article_main/uploads/2016/02/04/56b3b180e9e60.jpeg",
+    "puntuacion":5
+  }
+]
 
