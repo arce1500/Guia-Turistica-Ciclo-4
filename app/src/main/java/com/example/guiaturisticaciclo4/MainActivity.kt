@@ -11,13 +11,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.cardview)
         val lugaresList = Utils(this).getJsonDataFromAsset(applicationContext, "lugares.json")
         val array = JSONArray(lugaresList)
-        println(array[1])
-        val nombres: ArrayList<String> = ArrayList()
+        val datos: ArrayList<SitiosTuristicos> = ArrayList()
         for (i in 0 until array.length()){
-            val cityInfo = array.getJSONObject(i)
-            nombres.add(cityInfo.getString("name"))
+            val lugarInfo = array.getJSONObject(i)
+            val sitio: SitiosTuristicos = SitiosTuristicos(lugarInfo.getString("name"),
+                                                           lugarInfo.getString("description"),
+                                                           lugarInfo.getString("location"),
+                                                           lugarInfo.getString("puntuacion"),
+                                                           lugarInfo.getString("imageUrl"))
+
+            datos.add(sitio)
+
+
         }
-        println(nombres)
+        println(datos)
 
 
     }
