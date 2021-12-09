@@ -10,7 +10,7 @@ import com.example.guiaturisticaciclo4.SitiosTuristicos
 class lugaresAdapter(val lugares:ArrayList<SitiosTuristicos>):RecyclerView.Adapter<lugaresAdapter.LugarHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LugarHolder {
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.cardview, parent, false)
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.card, parent, false)
         return  LugarHolder(v)
     }
 
@@ -23,7 +23,7 @@ class lugaresAdapter(val lugares:ArrayList<SitiosTuristicos>):RecyclerView.Adapt
 
     class LugarHolder(private val view:View):RecyclerView.ViewHolder(view) {
         fun render(lugares:SitiosTuristicos) {
-                view.tv
+                view.ite
         }
     }
 
