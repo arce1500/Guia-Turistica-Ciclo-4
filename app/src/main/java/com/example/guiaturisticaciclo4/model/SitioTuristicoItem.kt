@@ -2,6 +2,7 @@ package com.example.guiaturisticaciclo4.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class SitioTuristicoItem(
     @SerializedName("description")
@@ -14,4 +15,4 @@ data class SitioTuristicoItem(
     val name: String,
     @SerializedName("puntuacion")
     val puntuacion: Int
-)
+): Serializable

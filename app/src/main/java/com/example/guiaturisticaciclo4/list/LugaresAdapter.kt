@@ -10,7 +10,10 @@ import com.example.guiaturisticaciclo4.R
 import com.example.guiaturisticaciclo4.model.SitioTuristicoItem
 import com.squareup.picasso.Picasso
 
-class LugaresAdapter (val lugareslist: ArrayList<SitioTuristicoItem>): RecyclerView.Adapter<LugaresAdapter.ViewHolder>() {
+class LugaresAdapter (
+    private val lugareslist: ArrayList<SitioTuristicoItem>,
+    val onItemClicked: (SitioTuristicoItem) -> Unit
+    ): RecyclerView.Adapter<LugaresAdapter.ViewHolder>() {
 
 
 
@@ -21,6 +24,7 @@ class LugaresAdapter (val lugareslist: ArrayList<SitioTuristicoItem>): RecyclerV
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val sitioTuristico = lugareslist[position]
+        holder.itemView.setOnClickListener { onItemClicked(lugareslist[position]) }
         holder.render(sitioTuristico)
 
     }
