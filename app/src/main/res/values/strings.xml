@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">Guia Turistica Ciclo 4</string>
     <string name="titulo">Titulo</string>
+    <string name="titulo_lugar">Pereira</string>
+    <string name="pereira">pereira</string>
+    <string name="detalle">Detalle:</string>
+    <string name="detalles_texto">Es un puente atirantado que une a la ciudad de Pereira con el municipio de Dosquebradas atravesando el valle del río Otún, en del Área Metropolitana de Centro Occidente, en Risaralda, Colombia. Se considera una de las obras viales más importantes de Colombia</string>
+    <string name="ubicacion">Ubicación:</string>
+    <string name="ubucacion_texto">Pereira y Dos Quebradas</string>
+    <string name="puntuacion">Puntuacion:</string>
+    <string name="puntuacion_valor">5</string>
 
     <string-array name="lista_uno">
         <item>Uno</item>

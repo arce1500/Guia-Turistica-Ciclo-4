@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Guia Turistica Ciclo 4"
 include ':app'
+include ':guiaturistica'
