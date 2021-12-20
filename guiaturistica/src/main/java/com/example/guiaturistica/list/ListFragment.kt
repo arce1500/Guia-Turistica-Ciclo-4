@@ -1,12 +1,11 @@
 package com.example.guiaturistica.list
 
-import android.content.Intent
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.guiaturistica.R
 import com.example.guiaturistica.databinding.FragmentDetailBinding
 import com.example.guiaturistica.model.SitioTuristico
 import com.example.guiaturistica.model.SitioTuristicoItem
@@ -32,6 +31,8 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         listLugares =  json()
         lugaresAdapter = LugaresAdapter(listLugares, onItemClicked = {onListaCliked(it)})
+
+
 
     }
     private fun json(): ArrayList<SitioTuristicoItem> {
