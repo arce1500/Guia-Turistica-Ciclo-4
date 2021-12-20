@@ -2,20 +2,28 @@ package com.example.guiaturisticaciclo4.detalle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.guiaturisticaciclo4.R
 import com.example.guiaturisticaciclo4.databinding.ActivityDetalleBinding
+import com.example.guiaturisticaciclo4.model.SitioTuristicoItem
+import com.squareup.picasso.Picasso
 
 class DetalleActivity : AppCompatActivity() {
 
-    lateinit var detalleBinding: ActivityDetalleBinding
+    private lateinit var detalleBinding: ActivityDetalleBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         detalleBinding = ActivityDetalleBinding.inflate(layoutInflater)
         setContentView(detalleBinding.root)
 
-        val nombre = intent.extras?.getString("nombre")
-        detalleBinding.tituloLugar.text = nombre
+        val lugar: SitioTuristicoItem = intent.extras?.getSerializable("lugar") as SitioTuristicoItem
+
+        with(detalleBinding){
+            tituloLugar.text = lugar.name
+            detalleLugarTexto.text = lugar.description
+            ubicacionLugarTexto.text = lugar.location
+            puntuacionLugarValor.text = lugar.puntuacion.toString()
+            Picasso.get().load(lugar.imageUrl).into(imageLugar)
+        }
 
     }
 }
