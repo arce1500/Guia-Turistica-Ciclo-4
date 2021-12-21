@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.guiaturistica.databinding.FragmentListBinding
+import com.example.guiaturistica.main.MainActivity
 import com.example.guiaturistica.model.SitioTuristico
 import com.example.guiaturistica.model.SitioTuristicoItem
 import com.google.gson.Gson
@@ -21,6 +22,9 @@ class ListFragment : Fragment() {
     lateinit var lugaresAdapter: LugaresAdapter
 
 
+    
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,6 +35,7 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as MainActivity?)?.hideIcon()
         listLugares =  json()
         lugaresAdapter = LugaresAdapter(listLugares, onItemClicked = {onListaCliked(it)})
 
@@ -49,8 +54,7 @@ class ListFragment : Fragment() {
         return data
     }
     private fun onListaCliked(lugar: SitioTuristicoItem) {
-        //findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(lugar = lugar))
-        findNavController().navigate(ListFragmentDirections.actionListFragmentToSettingsFragment2())
+        findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(lugar = lugar))
 
     }
 
