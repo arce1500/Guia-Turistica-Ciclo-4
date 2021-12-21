@@ -31,6 +31,12 @@ class LugaresAdapter (
 
     override fun getItemCount(): Int =  lugareslist.size
 
+    fun appendItems(newItems: ArrayList<SitioTuristicoItem>) {
+        lugareslist.clear()
+        lugareslist.addAll(newItems)
+        notifyDataSetChanged()
+    }
+
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
         var nameTextView : TextView = view.findViewById(R.id.card_nombre_lugar)
