@@ -1,5 +1,4 @@
-{
-  "lugares": [
+ [
     {
       "name": "Viaducto Cesar Gaviria",
       "description": "Es un puente atirantado que une a la ciudad de Pereira con el municipio de Dosquebradas atravesando el valle del río Otún, en del Área Metropolitana de Centro Occidente, en Risaralda, Colombia. Se considera una de las obras viales más importantes de Colombia.1\nDiariamente transitan por allí 186.000 vehículos. En las mañanas el flujo mayoritario es de Dosquebradas a Pereira y en las tardes sucede lo contrario.\n",
@@ -22,4 +21,4 @@
       "puntuacion": 5
     }
   ]
-}
+
