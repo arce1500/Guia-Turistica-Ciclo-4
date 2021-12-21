@@ -13,7 +13,7 @@
             android:icon="@drawable/ic_baseline_notifications_24"/>
         <CheckBoxPreference
             android:defaultValue="false"
-            app:dependency="notificciones"
+            app:dependency="notificaciones"
             app:key="sonido"
             app:title="Activar sonido de Notificaciones"
             android:icon="@drawable/ic_baseline_volume_up_24"/>
